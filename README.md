@@ -18,3 +18,18 @@ Use GitHub for version control
 Provide a README with setup instructions and optimization suggestions.
 
 SETUP INSTRUCTIONS
+
+1) Clone Repository:
+   gh repo clone heis-divine/scalable_etl_pipeline_toxigen
+   cd scalable-etl-pipeline
+2) Set Up Virtual Environment:
+   python -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   venv\Scripts\activate     # On Windows
+3) Install Dependencies:
+   pip install -r requirements.txt
+4) Database Configuration:
+   Create a PostgreSQL database.
+   Update database_url in the main(etl_pipeline.py) with your credentials(Deatils from your PostgreSQL database).
+5) Run the ETL Pipeline:
+   run the main file etl_pipeline.py
