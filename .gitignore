@@ -1,0 +1,16 @@
+# Ignore large dataset files
+dataset/
+*.csv
+*.json
+
+# Ignore virtual environment
+venv/
+
+# Large data files
+*.csv
+*.json
+*.parquet
+*.feather
+
+# System files
+.DS_Store
