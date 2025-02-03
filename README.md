@@ -1,21 +1,29 @@
 TOXIGEN ETL Pipeline
-This project is an ETL (Extract, Transform, Load) pipeline designed to process the TOXIGEN dataset for toxic language detection. The pipeline extracts data from a JSON/CSV file, cleans and transforms it, and loads it into a PostgreSQL 
+This project is an ETL (Extract, Transform, Load) pipeline designed to process the TOXIGEN dataset for toxic language detection. The pipeline extracts data from a JSON/CSV file, cleans and transforms it, and loads it into a PostgreSQL database.
 
-Project Requirements
+PROJECT REQUIREMENTS 
 
-This project was completed as part of a technical test and adheres to the following requirements:
-
+This project adheres to the following requirements:
 Extract data from the TOXIGEN dataset.
-
 Transform and clean the data, including categorizing it for easier analysis.
-
 Load the cleaned data into a PostgreSQL or MongoDB database.
-
 Optimize the pipeline for handling large-scale data.
-
 Use GitHub for version control
-
 Provide a README with setup instructions and optimization suggestions.
+
+PROJECT STRUCTURE
+toxigen-etl-pipeline/
+ |── data/                # Raw dataset (excluded from GitHub due to size)
+ |── scripts/             # ETL scripts
+ |   ├── extract.py       # Extract data from CSV/JSON
+ |   ├── transform.py     # Clean and categorize data
+ |   ├── load.py          # Load data into database
+ |── db/                  # Database setup
+ |   ├── config.py        # Database connection settings
+ |── .gitignore           # Ignore large files & virtual environments
+ |── etl_pipeline.py      # main python file
+ |── requirements.txt     # Dependencies
+ |── README.md            # Documentation
 
 SETUP INSTRUCTIONS
 
@@ -33,3 +41,13 @@ SETUP INSTRUCTIONS
    Update database_url in the main(etl_pipeline.py) with your credentials(Deatils from your PostgreSQL database).
 5) Run the ETL Pipeline:
    run the main file etl_pipeline.py
+
+   
+HANDLING LARGE FILES
+
+Due to GitHub's file size limitations, the dataset and other large files have been removed from version control. To run this project, manually download the dataset from the TOXIGEN repository and place it in the dataset/ folder. Alternatively I have compressed the entire pipeline and datsets which can be sent on request.
+
+OPTIMIZATION SUGGESTIONS
+1) 
+
+
