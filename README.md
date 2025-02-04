@@ -12,8 +12,8 @@ Use GitHub for version control
 Provide a README with setup instructions and optimization suggestions.
 
 PROJECT STRUCTURE
-toxigen-etl-pipeline/
- |── data/                # Raw dataset (excluded from GitHub due to size)
+scalable-etl-pipeline/
+ |── dataset/             # Raw dataset (excluded from GitHub due to size)
  |── scripts/             # ETL scripts
  |   ├── extract.py       # Extract data from CSV/JSON
  |   ├── transform.py     # Clean and categorize data
@@ -40,7 +40,7 @@ SETUP INSTRUCTIONS
    Create a PostgreSQL database.
    Update database_url in the main(etl_pipeline.py) with your credentials(Deatils from your PostgreSQL database).
 5) Run the ETL Pipeline:
-   run the main file etl_pipeline.py
+   run the main file etl_pipeline.py("python etl_pipeline.py")
 
    
 HANDLING LARGE FILES
@@ -48,6 +48,10 @@ HANDLING LARGE FILES
 Due to GitHub's file size limitations, the dataset and other large files have been removed from version control. To run this project, manually download the dataset from the TOXIGEN repository and place it in the dataset/ folder. Alternatively I have compressed the entire pipeline and datsets which can be sent on request.
 
 OPTIMIZATION SUGGESTIONS
-1) 
+1) Integrate AWS Glue Data Quality to detect data anomalies before ingestion.
+2) Batch Processing by loading data in chunks instead of as a whole or by row.
+3) Store large datasets in the cloud e.g Amazon S3, Google Cloud Storage, or Firebase Storage instead of locally.
+4) Real-Time Processing with Apache Kafka or AWS Lambda.
+5) Training and using a different model for better classification.
 
 
