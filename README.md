@@ -38,7 +38,7 @@ SETUP INSTRUCTIONS
    pip install -r requirements.txt
 4) Database Configuration:
    Create a PostgreSQL database.
-   Update database_url in the main(etl_pipeline.py) with your credentials(Deatils from your PostgreSQL database).
+   Update database_url in the main(etl_pipeline.py) with your credentials(Details from your PostgreSQL database).
 5) Run the ETL Pipeline:
    run the main file etl_pipeline.py("python etl_pipeline.py")
 
