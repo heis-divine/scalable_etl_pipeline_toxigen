@@ -16,7 +16,13 @@ def main():
     print(transformed_data)
     
     # Loading the data into PostgreSQL
-    database_url = 'postgresql://myuser:mypassword@localhost:5432/mydatabase'
+    db_name = 'mydatabase'
+    db_user = 'myuser'
+    db_host = 'localhost'
+    db_password = 'mypassword'
+    db_port = 5432
+    database_url = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
+    print(database_url)
     load_data(transformed_data, database_url, 'toxigen_data')
 
 if __name__ == "__main__":
